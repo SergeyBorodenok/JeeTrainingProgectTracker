@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:noNamespaceSchemaLocation = "User.xsd">
+	<user>
+		<email>userWork@gmail.com</email>
+		<password>IWantWork</password>
+		<role>USER</role>
+		<firstName>Sergey</firstName>
+		<lastName>Graft</lastName>
+	</user>
+	<user>
+		<email>AdminWork@gmail.com</email>
+		<password>IWantAdmin</password>
+		<role>ADMIN</role>
+		<firstName>Pavel</firstName>
+		<lastName>Green</lastName>
+	</user>
+</users>

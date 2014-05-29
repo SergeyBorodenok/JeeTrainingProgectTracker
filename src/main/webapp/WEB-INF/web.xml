@@ -4,6 +4,7 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+<<<<<<< HEAD
     <servlet>
   	<servlet-name>AuthentificationServlet</servlet-name>
   	<display-name>AuthentificationServlet</display-name>
@@ -117,4 +118,44 @@
   <welcome-file-list>
 	<welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
+=======
+  <filter>
+  	<filter-name>AuthentificationFilter</filter-name>
+  	<display-name>AuthentificationFilter</display-name>
+  	<description></description>
+  	<filter-class>by.epamlab.authentification.AuthentificationFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>AuthentificationFilter</filter-name>
+  	<url-pattern>/WelcomPage</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+  	<servlet-name>WelcomPage</servlet-name>
+  	<display-name>WelcomPage</display-name>
+  	<description></description>
+  	<servlet-class>by.epamlab.servlet.WelcomPage</servlet-class>
+  	
+  </servlet>
+  <servlet>
+  	<servlet-name>Logout</servlet-name>
+  	<display-name>Logout</display-name>
+  	<description></description>
+  	<servlet-class>by.epamlab.servlet.Logout</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>WelcomPage</servlet-name>
+  	<url-pattern>/WelcomPage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Logout</servlet-name>
+  	<url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+	
+		<welcome-file>WelcomPage</welcome-file>
+		
+	</welcome-file-list>
+>>>>>>> 837e08a971a209db838efa8fa8486ce50fb5f8db
 </web-app>

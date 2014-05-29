@@ -1,6 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
+<<<<<<< HEAD
   <groupId>2</groupId>
   <artifactId>JeeTrainingIssueTracker</artifactId>
   <packaging>war</packaging>
@@ -13,6 +14,19 @@
      <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
   
+=======
+  <groupId>1</groupId>
+  <artifactId>JeeTrainingProgectTracker</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>JeeTrainingProgectTracker Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+  </properties>
+>>>>>>> 837e08a971a209db838efa8fa8486ce50fb5f8db
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -20,6 +34,7 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+<<<<<<< HEAD
     <dependency>
     <groupId>javax.servlet</groupId>
     <artifactId>jstl</artifactId>
@@ -38,5 +53,11 @@
   </dependencies>
   <build>
     <finalName>JeeTrainingIssueTracker</finalName>
+=======
+    
+  </dependencies>
+  <build>
+    <finalName>JeeTrainingProgectTracker</finalName>
+>>>>>>> 837e08a971a209db838efa8fa8486ce50fb5f8db
   </build>
 </project>
