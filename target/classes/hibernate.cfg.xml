@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		
+		<mapping class="org.training.siarhei_baradzionak.beans.issue.Attachment" />
+		<mapping class="org.training.siarhei_baradzionak.beans.issue.Comment" />
+		<mapping class="org.training.siarhei_baradzionak.beans.issue.Issue" />
+		<mapping class="org.training.siarhei_baradzionak.beans.issue.Priority" />
+		<mapping class="org.training.siarhei_baradzionak.beans.issue.Resolution" />
+		<mapping class="org.training.siarhei_baradzionak.beans.issue.Status" />
+		<mapping class="org.training.siarhei_baradzionak.beans.issue.Type" />
+		<mapping class="org.training.siarhei_baradzionak.beans.project.BuildProject" />
+		<mapping class="org.training.siarhei_baradzionak.beans.project.Project" />
+		<mapping class="org.training.siarhei_baradzionak.beans.users.User" />
+	</session-factory>
+</hibernate-configuration>

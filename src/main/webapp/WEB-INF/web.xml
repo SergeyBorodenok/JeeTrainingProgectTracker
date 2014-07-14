@@ -1,161 +1,33 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
-<web-app>
-  <display-name>Archetype Created Web Application</display-name>
-<<<<<<< HEAD
-    <servlet>
-  	<servlet-name>AuthentificationServlet</servlet-name>
-  	<display-name>AuthentificationServlet</display-name>
-  	<description></description>
-  	<servlet-class>org.training.issueTracker.authentification.AuthentificationServlet</servlet-class>
-  </servlet>
-    <servlet>
-    	<servlet-name>LogoutController</servlet-name>
-    	<display-name>LogoutController</display-name>
-    	<description></description>
-    	<servlet-class>org.training.issueTracker.authentification.LogoutController</servlet-class>
-    </servlet>
-    <servlet>
-    	<servlet-name>GuestController</servlet-name>
-    	<display-name>GuestController</display-name>
-    	<description></description>
-    	<servlet-class>org.training.issueTracker.guestLoading.GuestController</servlet-class>
-    </servlet>
-    <servlet>
-    	<servlet-name>UserTaskController</servlet-name>
-    	<display-name>UserTaskController</display-name>
-    	<description></description>
-    	<servlet-class>org.training.issueTracker.userLoadingTask.UserTaskController</servlet-class>
-    </servlet>
-    <servlet>
-    	<servlet-name>SubmitIssueController</servlet-name>
-    	<display-name>SubmitIssueController</display-name>
-    	<description></description>
-    	<servlet-class>org.training.issueTracker.Issue.SubmitIssueController</servlet-class>
-    </servlet>
-    <servlet>
-    	<servlet-name>AddSubmitController</servlet-name>
-    	<display-name>AddSubmitController</display-name>
-    	<description></description>
-    	<servlet-class>org.training.issueTracker.Issue.AddSubmitController</servlet-class>
-    </servlet>
-    <servlet>
-    	<servlet-name>AbstractBaseController</servlet-name>
-    	<display-name>AbstractBaseController</display-name>
-    	<description></description>
-    	<servlet-class>org.training.issueTracker.abstractController.AbstractBaseController</servlet-class>
-    </servlet>
-    <servlet>
-    	<servlet-name>EditIssueController</servlet-name>
-    	<display-name>EditIssueController</display-name>
-    	<description></description>
-    	<servlet-class>org.training.issueTracker.editIssue.EditIssueController</servlet-class>
-    </servlet>
-    <servlet>
-    	<servlet-name>UpdateEditIssueController</servlet-name>
-    	<display-name>UpdateEditIssueController</display-name>
-    	<description></description>
-    	<servlet-class>org.training.issueTracker.editIssue.UpdateEditIssueController</servlet-class>
-    </servlet>
-    <servlet>
-    	<servlet-name>SortedController</servlet-name>
-    	<display-name>SortedController</display-name>
-    	<description></description>
-    	<servlet-class>org.training.issueTracker.sortedIssue.SortedController</servlet-class>
-    </servlet>
-    <servlet>
-    	<servlet-name>UserSortedTaskController</servlet-name>
-    	<display-name>UserSortedTaskController</display-name>
-    	<description></description>
-    	<servlet-class>org.training.issueTracker.userLoadingTask.UserSortedTaskController</servlet-class>
-    </servlet>
-  <servlet-mapping>
-  	<servlet-name>AuthentificationServlet</servlet-name>
-  	<url-pattern>/AuthentificationServlet</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>LogoutController</servlet-name>
-  	<url-pattern>/LogoutController</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>GuestController</servlet-name>
-  	<url-pattern>/GuestController</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>UserTaskController</servlet-name>
-  	<url-pattern>/UserTaskController</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>SubmitIssueController</servlet-name>
-  	<url-pattern>/SubmitIssueController</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>AddSubmitController</servlet-name>
-  	<url-pattern>/AddSubmitController</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>AbstractBaseController</servlet-name>
-  	<url-pattern>/AbstractBaseController</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>EditIssueController</servlet-name>
-  	<url-pattern>/EditIssueController</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>UpdateEditIssueController</servlet-name>
-  	<url-pattern>/UpdateEditIssueController</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>SortedController</servlet-name>
-  	<url-pattern>/SortedController</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>UserSortedTaskController</servlet-name>
-  	<url-pattern>/UserSortedTaskController</url-pattern>
-  </servlet-mapping>
-  <welcome-file-list>
-	<welcome-file>index.jsp</welcome-file>
-  </welcome-file-list>
-=======
-  <filter>
-  	<filter-name>AuthentificationFilter</filter-name>
-  	<display-name>AuthentificationFilter</display-name>
-  	<description></description>
-  	<filter-class>by.epamlab.authentification.AuthentificationFilter</filter-class>
-  </filter>
-  <filter-mapping>
-  	<filter-name>AuthentificationFilter</filter-name>
-  	<url-pattern>/WelcomPage</url-pattern>
-  </filter-mapping>
-  
-  <servlet>
-  	<servlet-name>WelcomPage</servlet-name>
-  	<display-name>WelcomPage</display-name>
-  	<description></description>
-  	<servlet-class>by.epamlab.servlet.WelcomPage</servlet-class>
-  	
-  </servlet>
-  <servlet>
-  	<servlet-name>Logout</servlet-name>
-  	<display-name>Logout</display-name>
-  	<description></description>
-  	<servlet-class>by.epamlab.servlet.Logout</servlet-class>
-  </servlet>
-  
-  <servlet-mapping>
-  	<servlet-name>WelcomPage</servlet-name>
-  	<url-pattern>/WelcomPage</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>Logout</servlet-name>
-  	<url-pattern>/Logout</url-pattern>
-  </servlet-mapping>
-  <welcome-file-list>
+	<!-- The definition of the Root Spring Container shared by all Servlets and Filters -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/spring/root-context.xml</param-value>
+	</context-param>
 	
-		<welcome-file>WelcomPage</welcome-file>
+	<!-- Creates the Spring Container shared by all Servlets and Filters -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<!-- Processes application requests -->
+	<servlet>
+		<servlet-name>appServlet</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>/WEB-INF/spring/appServlet/servlet-context.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
 		
-	</welcome-file-list>
->>>>>>> 837e08a971a209db838efa8fa8486ce50fb5f8db
+	<servlet-mapping>
+		<servlet-name>appServlet</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
 </web-app>
